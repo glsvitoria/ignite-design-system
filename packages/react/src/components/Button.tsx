@@ -10,6 +10,7 @@ export const Button = styled("button", {
   textAlign: "center",
   minWidth: 120,
   boxSizing: "border-box",
+  transition: "all 0.2s ease-in-out",
 
   display: "flex",
   alignItems: "center",
@@ -25,6 +26,10 @@ export const Button = styled("button", {
 
   "&:disabled": {
     cursor: "not-allowed",
+  },
+
+  "&:focus": {
+    boxShadow: "0 0 0 2px $colors$ignite500",
   },
 
   variants: {
