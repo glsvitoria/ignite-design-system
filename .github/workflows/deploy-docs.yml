@@ -22,6 +22,7 @@ jobs:
       - run: npm run build
         env:
           TURBO_TOKEN: JhHMPBZjJTOGQUBK6qnG8z42
+          TURBO_TEAM: glsvitoria
 
       - name: Deploy storybook
         working-directory: ./packages/docs
